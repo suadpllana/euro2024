@@ -1,0 +1,247 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+   font-family: cursive;
+   margin: 0;
+}
+.navContainer{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 32, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+.euroLogo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.navContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.navContainer a:hover{
+    opacity: 0.7;
+}
+h1{
+    margin-top: 45rem;
+}
+#qf-match1-winner, #qf-match2-winner,
+#qf-match3-winner, #qf-match4-winner{
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+#qf-result1, #qf-result2,
+#qf-result3,#qf-result4{
+    margin-left: 40px; 
+}
+#sf-match1-winner, #sf-match2-winner{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#sf-result1, #sf-result2{
+    margin-left: 50px
+}
+#final-result{
+    margin-left: 50px;
+}
+#final-winner{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    width: 100px;
+    height: 25px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    opacity: 0.7;
+}
+button:active{
+    opacity: 0.5;
+}
+a{
+    text-decoration:  none;
+}
+.semi-final, .final{
+    margin-top: 3rem;
+}
+.hidden{
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .the-predictor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    text-align: center;
+  }
+  .info{
+    text-align: center;
+  }
+  .flags{
+    width: 25px;
+    height: 15px;
+    border-radius: 5px;
+}
+footer {
+    background-color: rgb(32, 32, 186);
+    margin-top: 4rem;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+footer p a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    opacity: 0.7;
+} 
+@media(max-width: 726px){
+    .container{
+       grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        margin-top: 45rem;
+    }
+    .the-predictor{
+        margin-top: 20rem;
+    }
+    .info{
+        margin-top: 20rem;
+    }
+    .navContainer{
+        gap: 5%;
+    }
+    #qf-team2,#qf-team4,#qf-team6,#qf-team8{
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    #sf-team2,#sf-team4{
+        margin-right: 25px;
+    }
+    #final-team2{
+        margin-right: 25px;
+    }
+    #qf-result1,#qf-result2,
+    #qf-result3,#qf-result4{
+    margin-right: 60px;
+    }
+    #sf-result1,#sf-result2{
+    margin-right: 60px;
+    }
+    #final-result{
+        margin-right: 60px;
+    }
+    #qf-match1-winner,#qf-match2-winner,#qf-match3-winner,#qf-match4-winner{
+    margin-right: 25px;
+    }
+   #sf-match1-winner,#sf-match2-winner{
+    margin-right: 25px;
+   }
+   #final-winner{
+    margin-right: 25px;
+   }  
+}
+@media  screen and (min-width: 727px) and (max-width: 1014px) {
+    #qf-team2,#qf-team4,#qf-team6,#qf-team8{
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    h1{
+        margin-top: 45rem;
+    }
+    .the-predictor{
+        margin-top: 20rem;
+    }
+    .info{
+        margin-top: 20rem;
+    }                                                                   
+    #sf-team2,#sf-team4{
+        margin-right: 25px;
+    }
+    .info{
+        margin-top: 20rem;
+    }
+    .the-predictor{
+        margin-top: 20rem;
+    }
+    #final-team2{
+        margin-right: 25px;
+    }
+    #qf-result1,#qf-result2,
+    #qf-result3,#qf-result4{
+    margin-right: 60px;
+    }
+    #qf-match1-winner,#qf-match2-winner,#qf-match3-winner,#qf-match4-winner{
+    margin-right: 25px;
+    }
+   #sf-match1-winner,#sf-match2-winner{
+    margin-right: 25px;
+   }
+   #final-winner{
+    margin-right: 25px;
+   }  
+}
+@media screen and (min-width: 1015px) and (max-width: 1511px){
+    #qf-team2,#qf-team4,#qf-team6,#qf-team8{
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    .the-predictor{
+        margin-top: 20rem;
+    }
+    .info{
+        margin-top: 20rem;
+    }
+    #sf-team2,#sf-team4{
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+    #final-team2{
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+    #qf-result1,#qf-result2,
+    #qf-result3,#qf-result4{
+    margin-right: 100px;
+    }
+    #sf-result1,#sf-result2{
+    margin-right: 100px;
+    }
+    #final-result{
+        margin-right: 100px;
+    }
+    #qf-match1-winner,#qf-match2-winner,#qf-match3-winner,#qf-match4-winner{
+    margin-right: 25px;
+    }
+   #sf-match1-winner,#sf-match2-winner{
+    margin-right: 25px;
+   }
+   h1{
+    margin-top: 45rem;
+}
+   #final-winner{
+    margin-right: 25px;
+   }  
+}

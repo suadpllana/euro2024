@@ -1,0 +1,169 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    text-align: center;
+   
+}
+h1{
+    color: black;
+}
+.navContainer{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 32, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.euroLogo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.navContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.navContainer a:hover{
+    opacity: 0.7;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    row-gap: 50px;
+}
+.container .matchday1{
+    border: 1px solid black;
+    background-color:rgba(29, 29, 255, 0.47);
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+.container .matchday2{
+    border: 1px solid black;
+    background-color: rgb(24, 155, 24);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container .matchday3{
+    border: 1px solid black;
+    background-color:rgb(164, 49, 49);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.matchday1, .matchday2 ,.matchday3{
+    font-size: 20px;
+    border-radius: 20px;
+}
+#matchday1,#matchday2,#matchday3{
+    font-family: cursive;
+}
+.matchday1H1{
+    font-size: 50px;
+    color:rgba(29, 29, 255, 0.47);
+}
+.matchday2H1{
+    color: rgb(24, 155, 24);
+    font-size: 50px;
+}
+.matchday3H1{
+    color:rgb(164, 49, 49);
+    font-size: 50px;
+}
+
+.flags{
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.matchday1 p{
+    font-size: 35px;
+    color: white;
+}
+
+.matchday1 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+}
+.matchday2 p{
+    font-size: 35px;
+    color: white;
+}
+.matchday2 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+}
+.matchday3 p{
+    font-size: 35px;
+    color: white;
+}
+.matchday3 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+a:hover{
+    opacity: 0.7;
+}
+a:active{
+    opacity: 0.5;
+}
+li{
+    list-style: none;
+}
+.matchdayScroller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    font-family: cursive;
+}
+footer {
+    background-color: rgb(32, 32, 186);
+    margin-top: 4rem;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+footer p a {
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    opacity: 0.7;
+} 
+@media(max-width: 767px){
+    .container{
+        grid-template-columns: 1fr ;
+    }
+    .matchdayScroller{
+      gap: 2rem;
+    }
+    .navContainer{
+        gap: 5%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1015px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1016px) and (max-width: 1511px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

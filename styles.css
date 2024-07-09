@@ -1,0 +1,275 @@
+*{
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    text-align: center;
+   font-family: cursive;
+}
+.navContainer{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 32, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.euroLogo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.navContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.navContainer a:hover{
+    opacity: 0.7;
+}
+.groupContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+}
+.groupContainer div{
+    background-color: rgba(128, 128, 128, 0.411);
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.flags{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+.groupContainer .flags{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.Top3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.Top3 div{
+    background-color: rgb(17, 17, 172);
+    color: white;
+}
+.top3Scorers{
+    width: 100%;
+}
+.topScorers{
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 10%; 
+    gap: 5%;    
+    margin-top: 5%;
+}
+.topScorer .player{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.topScorer p {
+margin: 0;
+font-size: 20px;
+}
+.topScorer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.539);
+    border: 1px solid rgba(0, 0, 0, 0.071);
+    border-radius: 30%;
+}
+.playerCountry{
+    width: 20px;
+    height: 20px;
+    position: relative;
+   right: 16px;
+   top: 18px;
+   border-radius: 50%;
+}
+h1{
+    color: rgb(30, 0, 59);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav + h1{
+    margin-top: 5%;
+}
+.groupContainer p {  
+    text-align: left;
+ }
+.groupContainer p span {
+   margin-left: 47%;
+ }
+ .groupContainer p .other{
+    margin-left: 52%;
+ }
+ .qualified{
+    color: green;
+ }
+ #qualification{
+ color: white;
+    background-color: green;
+ }
+ #disqualification{
+    background-color: red;
+    color: white;
+ }
+ .recordsBroken{
+    margin-top: 3rem;
+ }
+ .recordBrokenImages{
+    width: 70%;
+   border-radius: 20px;
+ }
+ .recordsBroken h2{
+    font-size: 30px;
+   
+ }
+.recordsBroken p{
+font-size: 25px;
+}
+.hr{
+    margin-top: 3rem;
+}
+.euroHistory{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.euroHistoryImage{
+    width: 80%;
+    height: 200px;
+    border-radius: 30px;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.h1{
+    margin-bottom: 4%;
+}
+footer {
+    background-color: rgb(32, 32, 186);
+    margin-top: 4rem;
+  font-size: 20px;
+}
+footer p a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    opacity: 0.7;
+} 
+.info a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    color: black;
+}
+.info a:hover{
+    opacity: 0.7;
+}
+.info a:active{
+    opacity: 0.5;
+}
+.disqualified{
+    color: red;
+}
+.numberSpan{
+    font-size: 2rem;
+}
+@media(max-width: 767px){
+    .groupContainer{
+        grid-template-columns: 1fr;
+    }
+    .Top3{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .topScorers{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .recordsBroken{
+        margin-top: 5rem;
+    }
+    .history{ 
+        grid-template-columns: 1fr;
+    }
+    .euroHistory{
+        grid-template-columns: 1fr;
+       
+    }
+    .navContainer{
+        gap: 3%
+    }
+    .introduction{
+        margin-top: 5rem;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1015px) {
+    .groupContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .introduction{
+        margin-top: 5rem;
+    }
+    .Top3{
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .topScorers{
+        grid-template-columns: 1fr;
+    }
+  .topScorer{
+    width: 70%;
+    margin-left: 10%;
+  }
+  .recordsBroken{
+    margin-top: 30rem;
+  }
+  .history{ 
+    grid-template-columns: 1fr;
+  }
+  .euroHistory{
+    grid-template-columns: 1fr;
+  }
+  .euroHistoryImage{
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1016px) and (max-width: 1511px) {
+    .groupContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .history{ 
+        grid-template-columns: 1fr;
+      }
+      .euroHistory{
+        grid-template-columns: 1fr;
+      }
+      .euroHistoryImage{
+        height: 300px;
+        width: 60%;
+       object-fit: cover;
+      }
+     
+}
