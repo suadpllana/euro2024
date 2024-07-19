@@ -1,0 +1,473 @@
+*{
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    text-align: center;
+   font-family: cursive;
+}
+.navContainer{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 32, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.euroLogo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.navContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.navContainer a:hover{
+    opacity: 0.7;
+}
+.qualifiedDiv{
+    background-color: rgb(9, 67, 9);
+    border-radius: 20px;
+    color: white;
+}
+.qualifiedDiv h2{
+margin-top: 4rem;
+}
+
+.disqualifiedDiv{
+    background-color: rgb(112, 14, 14);
+    border-radius: 20px;
+    color: white
+}
+.disqualifiedDiv h2{
+    margin-top: 4rem;
+}
+
+.flags{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 9px;
+}
+.groupContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.groupContainer .group{
+    background-color: rgba(128, 128, 128, 0.411);
+    font-size: 20px;
+    font-family: cursive;
+    border: 1px solid black;
+    border-radius: 20px;
+    max-height: 270px;
+    min-height: 210px;
+}
+.groupContainer .flags{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.group{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+.group p {
+    display: inline;
+}
+.groupAligner{
+   margin-top: 2rem;
+   text-align: left;
+}
+.groupAlign{
+    margin-top: 0.5rem;
+    text-align: left;
+}
+.pAlign{
+    text-align:right;
+}
+.Top3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.Top3 div{
+    background-color: rgb(17, 17, 172);
+    color: white;
+}
+.top3Scorers{
+    width: 100%;
+    height: 280px;
+}
+.topScorers{
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 10%; 
+    gap: 5%;    
+    margin-top: 5%;
+}
+.gakpo , .olmo{
+    object-fit: cover;
+}
+.topScorer .player{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.topScorer p {
+margin: 0;
+font-size: 20px;
+}
+.topScorer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.539);
+    border: 1px solid rgba(0, 0, 0, 0.071);
+    border-radius: 30%;
+}
+.playerCountry{
+    width: 20px;
+    height: 20px;
+    position: relative;
+   right: 16px;
+   top: 18px;
+   border-radius: 50%;
+}
+h1{
+    color: rgb(30, 0, 59);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav + h1{
+    margin-top: 5%;
+}
+ .qualified{
+    color: green;
+ }
+.disqualified{
+    color: red;
+}
+ .recordsBroken{
+    margin-top: 10rem;
+ }
+ .recordBrokenImages{
+    width: 50%;
+   border-radius: 20px;
+ }
+ .recordsBroken h2{
+    font-size: 30px;
+   
+ }
+.recordsBroken p{
+font-size: 25px;
+}
+.hr{
+    margin-top: 3rem;
+}
+.euroHistory{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.euroHistoryImage{
+    width: 80%;
+    height: 200px;
+    border-radius: 30px;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.h1{
+    margin-bottom: 4%;
+}
+footer {
+    background-color: rgb(32, 32, 186);
+    margin-top: 4rem;
+  font-size: 20px;
+}
+footer p a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    opacity: 0.7;
+} 
+.info a{
+    text-decoration: none;
+    margin-right: 3rem;
+    font-size: 30px;
+    color: black;
+}
+.info a:hover{
+    opacity: 0.7;
+}
+.info a:active{
+    opacity: 0.5;
+}
+.disqualified{
+    color: red;
+}
+.numberSpan{
+    font-size: 2rem;
+}
+
+.awards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.playerOfTheEuro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.awardsFlags{
+    width: 30px;
+    position: relative;
+    top: 5px;
+}
+.POTMeuro{
+    width: 60%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+}
+
+.specialH1{
+    margin-top: 5rem;
+}
+.finalists{
+    border-radius: 20px;
+}
+@media(max-width: 481px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .recordBrokenImages{
+        height: 250px;
+        width: 80%;
+    }
+   .qualifiedDiv , .disqualifiedDiv{
+    height: 230px;
+   }
+    .finalists{
+        width: 80%;
+    }
+    .winnersText{
+        width: 90%;
+    }
+    .awards{
+        grid-template-columns: 1fr ;
+    }
+    .POTMeuro{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .playerOfTheEuro{
+        grid-template-columns: 1fr;
+    }
+    .groupContainer{
+        grid-template-columns: 1fr;
+    }
+    .Top3{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .topScorers{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .recordsBroken{
+        margin-top: 5rem;
+    }
+    .history{ 
+        grid-template-columns: 1fr;
+    }
+    .euroHistory{
+        grid-template-columns: 1fr;
+       
+    }
+    .navContainer{
+        gap: 3%
+    }
+    .introduction{
+        margin-top: 5rem;
+    }
+    .info a{
+        margin-right: 5px;
+    }
+    
+}
+@media screen and (min-width: 482px) and (max-width: 541px){
+    .groupContainer{
+        grid-template-columns: 1fr;
+    }
+    .navContainer{
+        gap: 5%;
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .qualifiedDiv, .disqualifiedDiv{
+        height: 230px;
+    }
+    .awards{
+        grid-template-columns: 1fr;
+    }
+    .playerOfTheEuro{
+        grid-template-columns: 1fr;
+    }
+    .finalists{
+        width: 70%;
+    }
+    #Euro{
+        margin-top: 5rem;
+    }
+    .info a{
+        margin-right: 15px;
+    }
+    .Top3{
+        grid-template-columns: 1fr 1fr;
+    }
+    .topScorers{
+        grid-template-columns: 1fr;
+    }
+    .recordsBroken{
+        margin-top: 45rem;
+    }
+    .recordBrokenImages{
+        width: 80%;
+    }
+    .euroHistory{
+        grid-template-columns: 1fr;
+    }
+    .history{ 
+        grid-template-columns: 1fr;
+      }
+}
+@media screen and (min-width: 542px) and (max-width: 821px) {
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .info a {
+        margin-right: 15px;
+    }
+    .qualifiedDiv, .disqualifiedDiv{
+        height: 230px;
+    }
+    .awards{
+        grid-template-columns: 1fr;
+    }
+    .playerOfTheEuro{
+        grid-template-columns: 1fr;
+    }
+    #RecordsBroken{
+        margin-top: 45rem;
+    }
+    .recordBrokenImages{
+        width: 60%;
+    }
+    .navContainer{
+        gap: 15%;
+    }
+    .groupContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .introduction{
+        margin-top: 5rem;
+    }
+    .Top3{
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .topScorers{
+        grid-template-columns:1fr;
+    }
+  .topScorer{
+    width: 70%;
+    margin-left: 10%;
+  }
+  .recordsBroken{
+    margin-top: 30rem;
+  }
+  .history{ 
+    grid-template-columns: 1fr;
+  }
+  .euroHistory{
+    grid-template-columns: 1fr;
+  }
+  .euroHistoryImage{
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 822px) and (max-width: 1025px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .group{
+        grid-template-columns: 43% 32% 25%;
+    }
+    .ipadResponsive{
+        text-align: center;
+    }
+    .groupContainer{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .disqualifiedDiv , .qualifiedDiv{
+        height: 230px;
+    }
+    .info a{
+        margin-right: 15px;
+    }
+    #Euro{
+        margin-top: 5rem;
+    }
+    .awards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .finalists{
+        width: 80%;
+    }
+    .topScorers{
+        grid-template-columns: 0% 1fr 1fr 1fr 0%;
+    }
+    .recordBrokenImages{
+        width: 70%;
+    }
+    .history{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 1026px) and (max-width: 1511px) {
+   
+    .groupContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .qualifiedDiv, .disqualifiedDiv{
+        height: 230px;
+    }
+    .history{ 
+        grid-template-columns: 1fr 1fr;
+      }
+      .euroHistory{
+        grid-template-columns: 1fr;
+      }
+      .euroHistoryImage{
+        height: 300px;
+        width: 60%;
+       object-fit: cover;
+      }
+     
+}
