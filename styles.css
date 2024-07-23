@@ -5,6 +5,7 @@ body{
     margin: 0;
     text-align: center;
    font-family: cursive;
+    background-color: black;
 }
 .navContainer{
     width: 100%;
