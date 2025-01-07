@@ -19,6 +19,9 @@ body{
     overflow: hidden;
     z-index: 1;
 }
+#Euro{
+    margin-top: 5rem;
+}
 .euroLogo{
     width: 50px;
     border-radius: 50%;

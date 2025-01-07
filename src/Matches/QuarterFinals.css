@@ -1,0 +1,89 @@
+.quarter-finals-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    margin-top: 3rem;
+}
+.quarter-finals .flags{
+    width: 100px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.quarter-finals{
+    background-color: darkblue;
+    width: 100%;
+    height: 98.6vh;
+    padding-top: 10px;
+    color: white;
+}
+.trophy{
+    height: 250px;
+    border-radius: 50%;
+}
+.quarter-finals .vs , .quarter-finals .date {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width: 345px) {
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .quarter-finals{
+        height: 100%;
+    }
+    
+    .first{
+display: none
+    }
+    .second{
+        display: none;
+    }
+    .quarter-finals-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .responsive{
+        display: none;
+    }
+    .navContainer{
+        gap: 0%;
+    }
+    .trophy{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 346px) and (max-width: 767px){
+    *{
+        font-family:Arial, Helvetica, sans-serif
+    }
+    .quarter-finals{
+        height: auto;
+    }
+    
+    .first{
+        display: none;
+    }
+    .quarter-finals-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .responsive{
+        display: none;
+    }
+    .navContainer{
+        gap: 2%;
+    }
+    .trophy{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1030px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navContainer{
+        gap: 5%
+    }
+    .quarter-finals{
+        height: auto;
+    }
+}

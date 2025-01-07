@@ -1,0 +1,217 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+}
+.navContainer{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 32, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.euroLogo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.navContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+.navContainer a:hover{
+    opacity: 0.7;
+}
+.match-container-matches{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    row-gap: 50px;
+   
+}
+.match-container-matches .matchday1{
+    border: 1px solid black;
+    background-color:rgba(29, 29, 255, 0.47);
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+.match-container-matches .matchday2{
+    border: 1px solid black;
+    background-color: rgb(24, 155, 24);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.match-container-matches .matchday3{
+    border: 1px solid black;
+    background-color:rgb(164, 49, 49);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.matchday1, .matchday2 ,.matchday3{
+    font-size: 20px;
+    border-radius: 20px;
+}
+#matchday1,#matchday2,#matchday3{
+    font-family: cursive;
+}
+.matchday1H1{
+    font-size: 50px;
+    color:rgba(29, 29, 255, 0.47);
+}
+.matchday2H1{
+    color: rgb(24, 155, 24);
+    font-size: 50px;
+}
+.matchday3H1{
+    color:rgb(164, 49, 49);
+    font-size: 50px;
+}
+
+.match-container-matches .flags{
+    margin-bottom: 7px;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.matchday1 p{
+    font-size: 35px;
+    color: white;
+}
+
+.matchday1 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+}
+.matchday2 p{
+    font-size: 35px;
+    color: white;
+}
+.matchday2 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+}
+.matchday3 p{
+    font-size: 35px;
+    color: white;
+}
+.matchday3 .MOTM{
+    color: black;
+    font-family:fantasy;
+    font-size: 25px;
+    
+}
+.matchdayScroller a , #topLink{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.matchdayScroller select{
+    margin-bottom: 2rem;
+    width: 150px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+.h1-container {
+    grid-column: span 3;
+    
+  }
+a:hover{
+    opacity: 0.7;
+}
+a:active{
+    opacity: 0.5;
+}
+.matchdayScroller li{
+    list-style: none;
+}
+.matchdayScroller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    font-family: cursive;
+}
+.match-container-matches footer {
+    background-color: rgb(32, 32, 186);
+    margin-top: 4rem;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+footer p a {
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    opacity: 0.7;
+} 
+@media (max-width: 767px){
+    *{
+        font-family:Arial, Helvetica, sans-serif
+    }
+    .match-container-matches{
+        grid-template-columns: 1fr;
+  
+    }
+   
+        .h1-container {
+            grid-column: span 1;
+        }
+
+    footer{
+        display: none;
+    }
+    #matchday1, #matchday2, #matchday3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .matchdayScroller{
+      display: none;
+    
+    }
+   .matchesContainer h2 {
+        margin-top: 5rem;
+    }
+    .navContainer{
+        gap: -2%;
+    }
+    .matchday1 .MOTM, .matchday2 .MOTM, .matchday3 .MOTM{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+}
+@media(min-width: 768px) and (max-width: 1217px){
+    *{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .match-container-matches{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .navContainer{
+        gap: 5%;
+    }
+    .matchdayScroller{
+        margin-top: 5rem;
+    }
+    #matchday1, #matchday2, #matchday3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h1-container {
+        grid-column: span 2;
+    }
+}

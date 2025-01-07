@@ -1,0 +1,87 @@
+.round-16-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    gap: 10px;
+    row-gap: 30px;
+    margin-top: 4rem;
+}
+.round-16{
+    width: 100%;
+    height: 97.3vh;
+    padding-top: 20px;
+    background-image: url(../assets/images/euroBackground.png);
+    background-size: cover;
+
+}
+.round-16-container div{
+    background-color: rgb(17, 129, 164);
+    border-radius: 30%;
+    border: solid 5px black;
+
+}
+.round-16 .flags{
+    width: 28px;
+    height: 15px;
+    border-radius: 5px;
+    object-fit: cover;  
+}
+.spain{
+    object-fit: fill
+}
+.round-16-container p{
+    color: black;
+    font-family: fantasy;
+}
+.date p {
+    color: black;
+    font-family: cursive;
+}
+
+@media(max-width: 767px){
+    .date p, p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .round-16{
+        height: 100%;
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .round-16-container {
+        grid-template-columns: 1fr;
+    }
+    .phone{
+        display: none;
+    }
+    .navContainer{
+        gap: 0%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1015px){
+    *{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+     .round-16-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .phone{
+        display: none;
+    }
+    .navContainer{
+        gap: 5%;
+    }
+}
+@media screen and (min-width: 1016px) and (max-width: 1511px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .round-16-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .phone{
+        display: none;
+    }
+   .navContainer{
+    gap: 7%;
+   }
+}
